@@ -1,0 +1,27 @@
+{
+  "antipasti": [
+    { "name": "Tagliere del Laghetto", "desc": "Selezione di salumi nostrani, giardiniera fatta in casa e formaggi locali", "price": "14" },
+    { "name": "Polenta e Funghi", "desc": "Polenta morbida di mais Marano con funghi di stagione trifolati", "price": "10" },
+    { "name": "Carne Salada Veronese", "desc": "Carpaccio di carne salada con scaglie di Monte Veronese e rucola", "price": "12" }
+  ],
+  "primi": [
+    { "name": "Risotto all'Isolana", "desc": "Ricetta tipica con Vialone Nano IGP e tastasal", "price": "15" },
+    { "name": "Bigoli al Torchio", "desc": "Serviti con ragù d'anatra battuto al coltello", "price": "13" },
+    { "name": "Tortelli alla Zucca", "desc": "Fatti in casa con burro versato, salvia e amaretto", "price": "14" }
+  ],
+  "secondi": [
+    { "name": "Pastissada de Caval", "desc": "Stracotto di cavallo servito con polenta abbrustolita", "price": "18" },
+    { "name": "Grigliata Mista", "desc": "Selezione di carni locali ai ferri con rosmarino", "price": "20" },
+    { "name": "Luccio in Salsa", "desc": "Luccio del lago in salsa di capperi e acciughe", "price": "16" }
+  ],
+  "dolci": [
+    { "name": "Sbrisolona del Garda", "desc": "Servita con crema pasticcera calda", "price": "7" },
+    { "name": "Tiramisù della Casa", "desc": "Preparato fresco ogni mattina", "price": "6" },
+    { "name": "Semifreddo all'Amaretto", "desc": "Con riduzione al Recioto", "price": "7" }
+  ],
+  "vini": [
+    { "name": "Amarone Valpolicella", "desc": "Cantina Negrar - DOCG", "price": "45" },
+    { "name": "Soave Classico", "desc": "Cantina del territorio - DOC", "price": "22" },
+    { "name": "Bardolino Chiaretto", "desc": "Fresco e fruttato", "price": "18" }
+  ]
+}

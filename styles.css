@@ -1,0 +1,141 @@
+:root {
+    --sage: #708238;
+    --sage-light: #8FA15B;
+    --sage-dark: #4A5823;
+    --cream: #F5F5DC;
+    --terracotta: #E2725B;
+    --charcoal: #2C3322;
+    --linen: #FDFDF5;
+}
+
+body {
+    background-color: var(--cream);
+    background-image: url('https://www.transparenttextures.com/patterns/pinstriped-suit.png');
+    color: var(--charcoal);
+}
+
+.bg-cream { background-color: var(--cream); }
+.bg-sage-50 { background-color: #f7f8f2; }
+.bg-sage-100 { background-color: #edf0e4; }
+.bg-sage-600 { background-color: var(--sage); }
+.bg-sage-700 { background-color: var(--sage-light); }
+.bg-sage-900 { background-color: var(--sage-dark); }
+.bg-sage-950 { background-color: #1a2010; }
+.bg-terracotta { background-color: var(--terracotta); }
+
+.text-sage-600 { color: var(--sage); }
+.text-sage-900 { color: var(--sage-dark); }
+.text-terracotta { color: var(--terracotta); }
+.border-sage-600 { border-color: var(--sage); }
+
+/* Typography */
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Nav styles */
+#main-nav {
+    background: transparent;
+}
+
+#main-nav.scrolled {
+    background: rgba(245, 245, 220, 0.95);
+    backdrop-filter: blur(8px);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(112, 130, 56, 0.1);
+}
+
+.nav-link {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--terracotta);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Tabs */
+.menu-tab {
+    padding: 0.6rem 1.4rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    color: var(--sage-dark);
+}
+
+.menu-tab:hover {
+    color: var(--terracotta);
+    background: white;
+}
+
+.menu-tab.active {
+    background: var(--sage);
+    color: white;
+    box-shadow: 0 8px 20px rgba(112, 130, 56, 0.2);
+}
+
+/* Menu Animation */
+.menu-item-entry {
+    animation: slideUpFade 0.6s forwards ease-out;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reveal Animations */
+[data-scroll-reveal] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.2, 1, 0.3, 1), 
+                transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+[data-scroll-reveal].visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Masonry Fallback Support */
+.columns-1 { column-count: 1; }
+@media (min-width: 640px) { .columns-2 { column-count: 2; } }
+@media (min-width: 1024px) { .columns-3 { column-count: 3; } }
+@media (min-width: 1280px) { .columns-4 { column-count: 4; } }
+
+.gallery-img {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Transitions */
+.transition-opacity { transition-property: opacity; }
+.duration-300 { transition-duration: 300ms; }
