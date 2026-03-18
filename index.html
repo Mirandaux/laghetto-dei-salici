@@ -1,325 +1,396 @@
-<!DOCTYPE html>
-<html lang="it" class="scroll-smooth">
-<head>
+<html lang="it" class="scroll-smooth"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scuola Materna Sacra Famiglia | Roverchiara (VR)</title>
-    <meta name="description" content="Scuola dell'infanzia paritaria FISM a Roverchiara. Un ambiente naturale dove il bambino impara ad essere se stesso.">
+    <title>Ristorante Laghetto Dei Salici - Cucina Tradizionale Veronese sul Lago</title>
+    <meta name="description" content="Immerso nella quiete di Roverchiara, il Laghetto dei Salici offre l'autentica cucina veronese: dal risotto all'isolana alla pastissada de caval, in una cornice naturale unica sul lago.">
     
-    <!-- Typography -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     
-    <!-- CDNs -->
+    <!-- Scripts & Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-[#FCF9F5] text-[#2D3436] font-serif selection:bg-[#F5A623]/30">
+    <link rel="stylesheet" href="styles.css">
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-right-6{right:-1.5rem}.bottom-10{bottom:2.5rem}.left-1\/2{left:50%}.right-8{right:2rem}.top-24{top:6rem}.top-8{top:2rem}.right-6{right:1.5rem}.bottom-full{bottom:100%}.left-0{left:0px}.top-full{top:100%}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.z-\[100\]{z-index:100}.z-\[10000\]{z-index:10000}.z-\[10001\]{z-index:10001}.z-\[9997\]{z-index:9997}.z-\[9998\]{z-index:9998}.z-\[9999\]{z-index:9999}.z-\[10002\]{z-index:10002}.z-\[10005\]{z-index:10005}.order-3{order:3}.order-4{order:4}.col-span-1{grid-column:span 1 / span 1}.mx-auto{margin-left:auto;margin-right:auto}.mx-0\.5{margin-left:0.125rem;margin-right:0.125rem}.-mt-2{margin-top:-0.5rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-3{margin-left:0.75rem}.mr-2{margin-right:0.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-auto{margin-top:auto}.mt-1{margin-top:0.25rem}.ml-2{margin-left:0.5rem}.mb-1\.5{margin-bottom:0.375rem}.mt-0\.5{margin-top:0.125rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-\[500px\]{height:500px}.h-\[600px\]{height:600px}.h-full{height:100%}.h-screen{height:100vh}.h-1{height:0.25rem}.h-2{height:0.5rem}.h-3\.5{height:0.875rem}.h-7{height:1.75rem}.h-2\.5{height:0.625rem}.h-3{height:0.75rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[400px\]{min-height:400px}.min-h-\[500px\]{min-height:500px}.w-10{width:2.5rem}.w-12{width:3rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-full{width:100%}.w-1{width:0.25rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-7{width:1.75rem}.w-2\.5{width:0.625rem}.w-px{width:1px}.min-w-\[280px\]{min-width:280px}.min-w-32{min-width:8rem}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-full{max-width:100%}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.max-w-xs{max-width:20rem}.max-w-\[80\%\]{max-width:80%}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.shrink-0{flex-shrink:0}.origin-left{transform-origin:left}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-x-0{--tw-scale-x:0;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.cursor-ew-resize{cursor:ew-resize}.cursor-nesw-resize{cursor:nesw-resize}.cursor-ns-resize{cursor:ns-resize}.cursor-nwse-resize{cursor:nwse-resize}.select-none{-webkit-user-select:none;user-select:none}.columns-1{columns:1}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-0\.5{gap:0.125rem}.gap-x-16{column-gap:4rem}.gap-y-12{row-gap:3rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.rounded-sm{border-radius:0.125rem}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/30{border-color:rgb(255 255 255 / 0.3)}.border-blue-300\/60{border-color:rgb(147 197 253 / 0.6)}.border-blue-400\/40{border-color:rgb(96 165 250 / 0.4)}.border-blue-400\/20{border-color:rgb(96 165 250 / 0.2)}.border-blue-500\/60{border-color:rgb(59 130 246 / 0.6)}.border-emerald-500\/60{border-color:rgb(16 185 129 / 0.6)}.border-opacity-30{--tw-border-opacity:0.3}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/95{background-color:rgb(0 0 0 / 0.95)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-blue-500\/60{background-color:rgb(59 130 246 / 0.6)}.bg-gray-900\/95{background-color:rgb(17 24 39 / 0.95)}.bg-red-500\/20{background-color:rgb(239 68 68 / 0.2)}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-blue-400\/80{--tw-gradient-from:rgb(96 165 250 / 0.8) var(--tw-gradient-from-position);--tw-gradient-to:rgb(96 165 250 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500\/10{--tw-gradient-from:rgb(59 130 246 / 0.1) var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-900\/50{--tw-gradient-from:rgb(49 46 129 / 0.5) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-500\/5{--tw-gradient-to:rgb(99 102 241 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(99 102 241 / 0.05) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-500\/90{--tw-gradient-to:rgb(59 130 246 / 0.9) var(--tw-gradient-to-position)}.to-slate-900\/40{--tw-gradient-to:rgb(15 23 42 / 0.4) var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-12{padding:3rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-1\.5{padding:0.375rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.pb-1{padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.pb-6{padding-bottom:1.5rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-normal{font-weight:400}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.text-white\/95{color:rgb(255 255 255 / 0.95)}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-white\/80{color:rgb(255 255 255 / 0.8)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.caret-blue-500{caret-color:#3b82f6}.opacity-0{opacity:0}.opacity-50{opacity:0.5}.opacity-100{opacity:1}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-blue-400\/15{--tw-ring-color:rgb(96 165 250 / 0.15)}.ring-blue-400\/30{--tw-ring-color:rgb(96 165 250 / 0.3)}.ring-white\/0{--tw-ring-color:rgb(255 255 255 / 0)}.ring-white\/10{--tw-ring-color:rgb(255 255 255 / 0.1)}.ring-blue-500\/25{--tw-ring-color:rgb(59 130 246 / 0.25)}.ring-white\/15{--tw-ring-color:rgb(255 255 255 / 0.15)}.ring-emerald-500\/25{--tw-ring-color:rgb(16 185 129 / 0.25)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-saturate-150{--tw-backdrop-saturate:saturate(1.5);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.duration-150{transition-duration:150ms}.duration-200{transition-duration:200ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.ease-\[cubic-bezier\(0\.34\2c 1\.56\2c 0\.64\2c 1\)\]{transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-blue-200\/80:hover{border-color:rgb(191 219 254 / 0.8)}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-white\/15:hover{background-color:rgb(255 255 255 / 0.15)}.hover\:bg-red-500\/30:hover{background-color:rgb(239 68 68 / 0.3)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:from-blue-300\/90:hover{--tw-gradient-from:rgb(147 197 253 / 0.9) var(--tw-gradient-from-position);--tw-gradient-to:rgb(147 197 253 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-indigo-900\/60:hover{--tw-gradient-from:rgb(49 46 129 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-blue-400\/95:hover{--tw-gradient-to:rgb(96 165 250 / 0.95) var(--tw-gradient-to-position)}.hover\:to-slate-900\/50:hover{--tw-gradient-to:rgb(15 23 42 / 0.5) var(--tw-gradient-to-position)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-blue-500:hover{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.hover\:text-white\/90:hover{color:rgb(255 255 255 / 0.9)}.hover\:text-red-300:hover{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-90:hover{opacity:0.9}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:ring-blue-300\/50:hover{--tw-ring-color:rgb(147 197 253 / 0.5)}.hover\:ring-white\/10:hover{--tw-ring-color:rgb(255 255 255 / 0.1)}.hover\:ring-white\/20:hover{--tw-ring-color:rgb(255 255 255 / 0.2)}.hover\:ring-white\/25:hover{--tw-ring-color:rgb(255 255 255 / 0.25)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:backdrop-blur-2xl:hover{--tw-backdrop-blur:blur(40px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.hover\:backdrop-blur-md:hover{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-offset-2:focus{outline-offset:2px}.focus\:outline-white\/40:focus{outline-color:rgb(255 255 255 / 0.4)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-x-100{--tw-scale-x:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-blue-500\/40{background-color:rgb(59 130 246 / 0.4)}.group:hover .group-hover\:opacity-100{opacity:1}@media not all and (min-width: 640px){.max-sm\:right-4{right:1rem}.max-sm\:min-w-\[260px\]{min-width:260px}.max-sm\:max-w-\[calc\(100vw-2rem\)\]{max-width:calc(100vw - 2rem)}}@media (min-width: 640px){.sm\:min-w-\[280px\]{min-width:280px}.sm\:max-w-sm{max-width:24rem}.sm\:columns-2{columns:2}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:order-3{order:3}.md\:order-4{order:4}.md\:col-span-2{grid-column:span 2 / span 2}.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-auto{height:auto}.md\:max-w-xs{max-width:20rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:px-12{padding-left:3rem;padding-right:3rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:h-full{height:100%}.lg\:columns-3{columns:3}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:p-24{padding:6rem}}@media (min-width: 1280px){.xl\:columns-4{columns:4}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-right-6{right:-1.5rem}.bottom-10{bottom:2.5rem}.left-1\/2{left:50%}.right-8{right:2rem}.top-24{top:6rem}.top-8{top:2rem}.right-6{right:1.5rem}.bottom-full{bottom:100%}.left-0{left:0px}.top-full{top:100%}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.z-\[100\]{z-index:100}.z-\[10000\]{z-index:10000}.z-\[10001\]{z-index:10001}.z-\[9997\]{z-index:9997}.z-\[9998\]{z-index:9998}.z-\[9999\]{z-index:9999}.z-\[10002\]{z-index:10002}.z-\[10005\]{z-index:10005}.order-3{order:3}.order-4{order:4}.col-span-1{grid-column:span 1 / span 1}.mx-auto{margin-left:auto;margin-right:auto}.mx-0\.5{margin-left:0.125rem;margin-right:0.125rem}.-mt-2{margin-top:-0.5rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-3{margin-left:0.75rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-auto{margin-top:auto}.ml-2{margin-left:0.5rem}.mb-1\.5{margin-bottom:0.375rem}.mt-0\.5{margin-top:0.125rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-\[500px\]{height:500px}.h-\[600px\]{height:600px}.h-full{height:100%}.h-screen{height:100vh}.h-1{height:0.25rem}.h-2{height:0.5rem}.h-3\.5{height:0.875rem}.h-7{height:1.75rem}.h-2\.5{height:0.625rem}.h-3{height:0.75rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[400px\]{min-height:400px}.min-h-\[500px\]{min-height:500px}.w-10{width:2.5rem}.w-12{width:3rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-full{width:100%}.w-1{width:0.25rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-7{width:1.75rem}.w-2\.5{width:0.625rem}.w-px{width:1px}.min-w-\[280px\]{min-width:280px}.min-w-32{min-width:8rem}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-\[80\%\]{max-width:80%}.max-w-full{max-width:100%}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.shrink-0{flex-shrink:0}.origin-left{transform-origin:left}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-x-0{--tw-scale-x:0;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.cursor-ew-resize{cursor:ew-resize}.cursor-nesw-resize{cursor:nesw-resize}.cursor-ns-resize{cursor:ns-resize}.cursor-nwse-resize{cursor:nwse-resize}.select-none{-webkit-user-select:none;user-select:none}.columns-1{columns:1}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-0\.5{gap:0.125rem}.gap-x-16{column-gap:4rem}.gap-y-12{row-gap:3rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.rounded-sm{border-radius:0.125rem}.rounded-md{border-radius:0.375rem}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/30{border-color:rgb(255 255 255 / 0.3)}.border-blue-300\/60{border-color:rgb(147 197 253 / 0.6)}.border-blue-400\/40{border-color:rgb(96 165 250 / 0.4)}.border-blue-400\/20{border-color:rgb(96 165 250 / 0.2)}.border-blue-500\/60{border-color:rgb(59 130 246 / 0.6)}.border-emerald-500\/60{border-color:rgb(16 185 129 / 0.6)}.border-opacity-30{--tw-border-opacity:0.3}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/95{background-color:rgb(0 0 0 / 0.95)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-blue-500\/60{background-color:rgb(59 130 246 / 0.6)}.bg-gray-900\/95{background-color:rgb(17 24 39 / 0.95)}.bg-red-500\/20{background-color:rgb(239 68 68 / 0.2)}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-blue-400\/80{--tw-gradient-from:rgb(96 165 250 / 0.8) var(--tw-gradient-from-position);--tw-gradient-to:rgb(96 165 250 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-500\/10{--tw-gradient-from:rgb(59 130 246 / 0.1) var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-900\/50{--tw-gradient-from:rgb(49 46 129 / 0.5) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-500\/5{--tw-gradient-to:rgb(99 102 241 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(99 102 241 / 0.05) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-500\/90{--tw-gradient-to:rgb(59 130 246 / 0.9) var(--tw-gradient-to-position)}.to-slate-900\/40{--tw-gradient-to:rgb(15 23 42 / 0.4) var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-12{padding:3rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-1\.5{padding:0.375rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.pb-1{padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.pb-6{padding-bottom:1.5rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-normal{font-weight:400}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.text-white\/95{color:rgb(255 255 255 / 0.95)}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.text-white\/80{color:rgb(255 255 255 / 0.8)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.caret-blue-500{caret-color:#3b82f6}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-50{opacity:0.5}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-blue-400\/15{--tw-ring-color:rgb(96 165 250 / 0.15)}.ring-blue-400\/30{--tw-ring-color:rgb(96 165 250 / 0.3)}.ring-white\/0{--tw-ring-color:rgb(255 255 255 / 0)}.ring-white\/10{--tw-ring-color:rgb(255 255 255 / 0.1)}.ring-blue-500\/25{--tw-ring-color:rgb(59 130 246 / 0.25)}.ring-white\/15{--tw-ring-color:rgb(255 255 255 / 0.15)}.ring-emerald-500\/25{--tw-ring-color:rgb(16 185 129 / 0.25)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-saturate-150{--tw-backdrop-saturate:saturate(1.5);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.duration-150{transition-duration:150ms}.duration-200{transition-duration:200ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.ease-\[cubic-bezier\(0\.34\2c 1\.56\2c 0\.64\2c 1\)\]{transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-blue-200\/80:hover{border-color:rgb(191 219 254 / 0.8)}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-white\/15:hover{background-color:rgb(255 255 255 / 0.15)}.hover\:bg-red-500\/30:hover{background-color:rgb(239 68 68 / 0.3)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:from-blue-300\/90:hover{--tw-gradient-from:rgb(147 197 253 / 0.9) var(--tw-gradient-from-position);--tw-gradient-to:rgb(147 197 253 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-indigo-900\/60:hover{--tw-gradient-from:rgb(49 46 129 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-blue-400\/95:hover{--tw-gradient-to:rgb(96 165 250 / 0.95) var(--tw-gradient-to-position)}.hover\:to-slate-900\/50:hover{--tw-gradient-to:rgb(15 23 42 / 0.5) var(--tw-gradient-to-position)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-blue-500:hover{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.hover\:text-white\/90:hover{color:rgb(255 255 255 / 0.9)}.hover\:text-red-300:hover{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:opacity-90:hover{opacity:0.9}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:ring-blue-300\/50:hover{--tw-ring-color:rgb(147 197 253 / 0.5)}.hover\:ring-white\/10:hover{--tw-ring-color:rgb(255 255 255 / 0.1)}.hover\:ring-white\/20:hover{--tw-ring-color:rgb(255 255 255 / 0.2)}.hover\:ring-white\/25:hover{--tw-ring-color:rgb(255 255 255 / 0.25)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:backdrop-blur-2xl:hover{--tw-backdrop-blur:blur(40px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.hover\:backdrop-blur-md:hover{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-offset-2:focus{outline-offset:2px}.focus\:outline-white\/40:focus{outline-color:rgb(255 255 255 / 0.4)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-x-100{--tw-scale-x:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-blue-500\/40{background-color:rgb(59 130 246 / 0.4)}.group:hover .group-hover\:opacity-100{opacity:1}@media not all and (min-width: 640px){.max-sm\:right-4{right:1rem}.max-sm\:min-w-\[260px\]{min-width:260px}.max-sm\:max-w-\[calc\(100vw-2rem\)\]{max-width:calc(100vw - 2rem)}}@media (min-width: 640px){.sm\:min-w-\[280px\]{min-width:280px}.sm\:max-w-sm{max-width:24rem}.sm\:columns-2{columns:2}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:order-3{order:3}.md\:order-4{order:4}.md\:col-span-2{grid-column:span 2 / span 2}.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-auto{height:auto}.md\:max-w-xs{max-width:20rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:px-12{padding-left:3rem;padding-right:3rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:h-full{height:100%}.lg\:columns-3{columns:3}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:p-24{padding:6rem}}@media (min-width: 1280px){.xl\:columns-4{columns:4}}</style></head>
+<body class="bg-cream text-charcoal font-sans antialiased overflow-x-hidden">
 
     <!-- Navigation -->
-    <header id="main-nav" class="fixed w-full top-0 z-50 transition-all duration-300 py-4">
+    <nav id="main-nav" class="fixed w-full z-50 transition-all duration-500 py-6 scrolled">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="#home" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 bg-[#1A6B5A] rounded-full flex items-center justify-center text-white">
-                    <i data-lucide="sprout"></i>
-                </div>
-                <div class="leading-tight">
-                    <span class="block font-playfair text-xl font-bold text-[#1A6B5A]">Sacra Famiglia</span>
-                    <span class="block text-xs uppercase tracking-widest opacity-70">Roverchiara</span>
-                </div>
+            <a href="#" class="text-2xl font-serif font-bold tracking-tight text-sage-900">
+                Laghetto <span class="text-sage-600 italic font-medium text-lg block -mt-2">Dei Salici</span>
             </a>
+            
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-widest font-medium">
+                <a href="#chi-siamo" class="nav-link hover:text-sage-700 transition-colors">Il Ristorante</a>
+                <a href="#menu" class="nav-link hover:text-sage-700 transition-colors">Menù</a>
+                <a href="#eventi" class="nav-link hover:text-sage-700 transition-colors">Eventi</a>
+                <a href="#gallery" class="nav-link hover:text-sage-700 transition-colors">Gallery</a>
+                <a href="tel:+39044274270" class="nav-link hover:text-terracotta transition-colors border border-sage-600 px-4 py-2 rounded-full">Prenota</a>
+            </div>
 
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a href="#metodo" class="hover:text-[#F5A623] transition-colors">Il Metodo</a>
-                <a href="#servizi" class="hover:text-[#F5A623] transition-colors">Servizi</a>
-                <a href="#team" class="hover:text-[#F5A623] transition-colors">Team</a>
-                <a href="#iscrizioni" class="hover:text-[#F5A623] transition-colors">Iscrizioni</a>
-                <a href="#faq" class="hover:text-[#F5A623] transition-colors">FAQ</a>
-                <a href="#contatti" class="hover:text-[#F5A623] transition-colors">Contatti</a>
-                <a href="#prenota" class="bg-[#1A6B5A] text-white px-6 py-3 rounded-full hover:bg-[#135245] transition-all transform hover:scale-105 shadow-lg">
-                    Prenota una visita
-                </a>
-            </nav>
-
-            <button class="lg:hidden p-2 text-[#1A6B5A]" id="mobile-menu-toggle">
-                <i data-lucide="menu"></i>
+            <button class="md:hidden text-sage-900" id="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" aria-hidden="true" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
             </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://r2-bucket.flowith.net/f/cd1c2a21156dd2a8/lakeside_dining_roverchiara_sunset_index_0.jpeg" alt="Tramonto sul lago a Roverchiara" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl visible" data-scroll-reveal="">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full mb-8 border border-white/20">
+                <span class="text-yellow-400 mr-2">★</span>
+                <span class="text-xs font-semibold tracking-wider">4.6 SU GOOGLE · 807 RECENSIONI</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-serif mb-6 leading-tight"><span class="italic font-light"><span style="font-style: normal;">A tavola,</span></span><div><span class="italic font-light">vista laghetto</span></div></h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Il sapore autentico della tradizione veronese, immerso nella quiete della natura di Roverchiara.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+39044274270" class="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone-call" aria-hidden="true" class="lucide lucide-phone-call w-4 h-4"><path d="M13 2a9 9 0 0 1 9 9"></path><path d="M13 6a5 5 0 0 1 5 5"></path><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    Prenota un tavolo
+                </a>
+                <a href="#menu" class="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full transition-all">
+                    Scopri il menù
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" aria-hidden="true" class="lucide lucide-chevron-down text-white opacity-50"><path d="m6 9 6 6 6-6"></path></svg>
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-[#1A6B5A] z-[60] flex flex-col items-center justify-center translate-x-full transition-transform duration-500 ease-in-out">
-        <button class="absolute top-8 right-8 text-white" id="mobile-menu-close">
-            <i data-lucide="x" class="w-10 h-10"></i>
-        </button>
-        <div class="flex flex-col gap-8 text-center text-white text-2xl font-playfair">
-            <a href="#metodo" class="nav-link text-white">Il Metodo</a>
-            <a href="#servizi" class="nav-link text-white">Servizi</a>
-            <a href="#team" class="nav-link text-white">Il Team</a>
-            <a href="#iscrizioni" class="nav-link text-white">Iscrizioni</a>
-            <a href="#contatti" class="nav-link text-white">Contatti</a>
-            <a href="#prenota" class="bg-[#F5A623] text-white px-8 py-4 rounded-full mt-4">Prenota Visita</a>
-        </div>
-    </div>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1510531704581-5b2870972060?q=80&w=2070&auto=format&fit=crop" alt="Bambini che giocano" class="w-full h-full object-cover opacity-20 scale-110" id="hero-bg">
-                <div class="absolute inset-0 bg-gradient-to-b from-[#FCF9F5]/80 via-transparent to-[#FCF9F5]"></div>
+    <!-- Chi Siamo -->
+    <section id="chi-siamo" class="py-24 px-6 md:px-12 bg-cream overflow-hidden">
+        <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group visible" data-scroll-reveal="">
+                <img src="https://r2-bucket.flowith.net/f/7ee361747e31c72d/cozy_italian_restaurant_interior_index_3.jpeg" alt="Interno accogliente Ristorante Laghetto dei Salici" class="w-full h-[600px] object-cover rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-6 -right-6 bg-terracotta text-white p-8 rounded-2xl hidden lg:block max-w-xs shadow-xl">
+                    <p class="font-serif italic text-xl leading-relaxed">"Dove la natura incontra la buona tavola."</p>
+                </div>
             </div>
-
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="max-w-3xl">
-                    <span class="inline-block px-4 py-1 rounded-full bg-[#1A6B5A]/10 text-[#1A6B5A] text-sm font-semibold mb-6 animate-fade-in">
-                        Scuola dell'infanzia paritaria FISM
-                    </span>
-                    <h1 class="text-5xl md:text-7xl font-playfair font-bold text-[#1A6B5A] leading-tight mb-6 opacity-0 translate-y-10" id="hero-title">
-                        Dove il bambino impara ad essere <span class="text-[#F5A623] italic">se stesso.</span>
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-10 leading-relaxed opacity-0 translate-y-10" id="hero-sub">
-                        Dal 2000, trasformiamo la curiosità in scoperta e il gioco in apprendimento profondo. Un ambiente luminoso ispirato alla natura nel cuore di Roverchiara.
+            <div class="space-y-8 visible" data-scroll-reveal="">
+                <span class="text-sage-600 font-semibold tracking-widest uppercase text-sm">La Nostra Filosofia</span>
+                <h2 class="text-4xl md:text-5xl font-serif leading-snug">Un'accoglienza familiare, tra acqua e salici.</h2>
+                <div class="prose prose-lg text-charcoal/80 font-light space-y-6">
+                    <p>
+                        Immerso nella quiete della campagna veronese, il <strong>Ristorante Laghetto dei Salici</strong> è il luogo dove la natura incontra la buona tavola. La nostra filosofia si basa sulla genuinità dei prodotti stagionali e sul rispetto delle ricette di un tempo.
                     </p>
-                    <div class="flex flex-wrap gap-4 opacity-0 translate-y-10" id="hero-btns">
-                        <a href="#prenota" class="bg-[#1A6B5A] text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl hover:bg-[#135245] transition-all">Prenota una visita gratuita</a>
-                        <a href="#metodo" class="border-2 border-[#1A6B5A] text-[#1A6B5A] px-8 py-4 rounded-full text-lg font-medium hover:bg-[#1A6B5A] hover:text-white transition-all">Il nostro metodo</a>
-                    </div>
+                    <p>
+                        Dalla pasta fresca fatta in casa ai dolci artigianali, ogni piatto racconta l’anima del nostro territorio. Un ambiente accogliente e rilassante, perfetto per momenti conviviali e per celebrare insieme i vostri eventi di famiglia più cari.
+                    </p>
                 </div>
-
-                <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0" id="trust-badges">
+                <div class="grid grid-cols-2 gap-6 pt-6">
                     <div class="flex items-center gap-3">
-                        <i data-lucide="check-circle" class="text-[#F5A623]"></i>
-                        <span class="font-medium text-sm">Iscritta FISM</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="award" class="text-[#F5A623]"></i>
-                        <span class="font-medium text-sm">Paritaria MIUR</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="calendar" class="text-[#F5A623]"></i>
-                        <span class="font-medium text-sm">Dal 2000</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <i data-lucide="heart" class="text-[#F5A623]"></i>
-                        <span class="font-medium text-sm">Cucina Interna</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Method Section -->
-        <section id="metodo" class="py-24 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col lg:flex-row gap-16 mb-20">
-                    <div class="lg:w-1/2">
-                        <h2 class="text-4xl md:text-5xl font-playfair font-bold text-[#1A6B5A] mb-8">Una pedagogia viva, non un travaso di nozioni.</h2>
-                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                            Alla Scuola Sacra Famiglia l'educazione è l'accensione di un fuoco. Ci ispiriamo ai principi della Reggio Emilia approach, dove l'ambiente è il "terzo educatore" e il bambino è protagonista attivo del suo apprendimento.
-                        </p>
-                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Non usiamo schede pre-compilate: i nostri progetti nascono dall'osservazione degli interessi dei bambini, trasformando ogni giornata in un'avventura di scoperta.
-                        </p>
-                        <div class="bg-[#FCF9F5] p-8 rounded-3xl border-l-4 border-[#F5A623]">
-                            <p class="italic text-[#1A6B5A] font-medium text-lg">"Il bambino ha cento linguaggi, cento mani, cento pensieri, cento modi di pensare, di giocare e di parlare."</p>
+                        <div class="w-10 h-10 rounded-full bg-sage-100 flex items-center justify-center text-sage-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="leaf" aria-hidden="true" class="lucide lucide-leaf w-5 h-5"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
                         </div>
+                        <span class="text-sm font-medium">Ingredienti KM 0</span>
                     </div>
-                    <div class="lg:w-1/2 grid md:grid-cols-1 gap-8" id="method-grid">
-                        <!-- Populated via JS -->
-                    </div>
-                </div>
-
-                <!-- Comparison Table -->
-                <div class="mt-24 reveal">
-                    <h3 class="text-3xl font-playfair font-bold text-center text-[#1A6B5A] mb-12">Cosa ci differenzia</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full border-collapse bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-                            <thead>
-                                <tr class="bg-[#1A6B5A] text-white">
-                                    <th class="p-6 text-left font-playfair">Caratteristica</th>
-                                    <th class="p-6 text-left font-playfair">Sacra Famiglia</th>
-                                    <th class="p-6 text-left font-playfair">Scuola Statale</th>
-                                </tr>
-                            </thead>
-                            <tbody id="comparison-body">
-                                <!-- Populated via JS -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="servizi" class="py-24 bg-[#FCF9F5]">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="text-4xl font-playfair font-bold text-[#1A6B5A] mb-6">Un'offerta formativa su misura</h2>
-                    <p class="text-gray-600 text-lg">Dalla sezione primavera fino ai laboratori di inglese, ogni servizio è pensato per supportare la crescita dei bambini e la serenità dei genitori.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
-                    <!-- Populated via JS -->
-                </div>
-
-                <div class="mt-16 bg-[#1A6B5A] rounded-[3rem] p-10 text-white flex flex-col md:flex-row items-center justify-between gap-8 reveal">
-                    <div>
-                        <h4 class="text-2xl font-playfair font-bold mb-2">Sezione Nido in arrivo</h4>
-                        <p class="opacity-80">Stiamo lavorando per accogliere anche i più piccoli (0-24 mesi). Seguici per le novità.</p>
-                    </div>
-                    <a href="#iscrizioni" class="bg-[#F5A623] text-white px-8 py-4 rounded-full font-bold whitespace-nowrap hover:scale-105 transition-all">Manifesta interesse</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section id="team" class="py-24 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div class="max-w-2xl">
-                        <h2 class="text-4xl font-playfair font-bold text-[#1A6B5A] mb-4">Stabilità e Passione: le nostre guide</h2>
-                        <p class="text-gray-600 text-lg">Il nostro punto di forza è un team affiatato che collabora da anni. Non solo insegnanti, ma compagne di viaggio per i vostri figli.</p>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="team-grid">
-                    <!-- Populated via JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA & Form -->
-        <section id="prenota" class="py-24 bg-[#FCF9F5]">
-            <div class="container mx-auto px-6">
-                <div class="bg-white rounded-[4rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
-                    <div class="lg:w-2/5 bg-[#1A6B5A] p-12 md:p-16 text-white flex flex-col justify-center">
-                        <h2 class="text-4xl font-playfair font-bold mb-6">Inizia il percorso con noi</h2>
-                        <p class="text-xl mb-12 opacity-90 leading-relaxed">Prenota una visita individuale. Ti accompagneremo nei nostri spazi per farti respirare l'atmosfera della scuola.</p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">1</div>
-                                <div>
-                                    <h4 class="font-bold">Prenota la visita</h4>
-                                    <p class="text-sm opacity-70">Scegli un orario e vieni a trovarci.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">2</div>
-                                <div>
-                                    <h4 class="font-bold">Colloquio conoscitivo</h4>
-                                    <p class="text-sm opacity-70">Parliamo dei bisogni di tuo figlio.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">3</div>
-                                <div>
-                                    <h4 class="font-bold">Iscrizione agevolata</h4>
-                                    <p class="text-sm opacity-70">Supporto per ISEE e bonus statali.</p>
-                                </div>
-                            </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-sage-100 flex items-center justify-center text-sage-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" aria-hidden="true" class="lucide lucide-users w-5 h-5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
                         </div>
-                    </div>
-                    
-                    <div class="lg:w-3/5 p-12 md:p-16" id="iscrizioni">
-                        <h3 class="text-2xl font-playfair font-bold text-[#1A6B5A] mb-8">Inviaci una richiesta</h3>
-                        <form id="enrollment-form" class="space-y-6">
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-sm font-bold text-gray-500 uppercase tracking-wider">Nome Genitore</label>
-                                    <input type="text" placeholder="Es. Anna Rossi" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#1A6B5A] transition-all">
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-sm font-bold text-gray-500 uppercase tracking-wider">Telefono</label>
-                                    <input type="tel" placeholder="340 000 0000" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#1A6B5A] transition-all">
-                                </div>
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wider">Email</label>
-                                <input type="email" placeholder="nome@esempio.it" class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#1A6B5A] transition-all">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wider">Messaggio</label>
-                                <textarea rows="4" placeholder="Parlaci di tuo figlio..." class="w-full px-6 py-4 rounded-2xl bg-gray-50 border-none focus:ring-2 focus:ring-[#1A6B5A] transition-all"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-[#F5A623] text-white py-5 rounded-2xl font-bold text-lg hover:shadow-xl transform active:scale-[0.98] transition-all">
-                                Invia la tua richiesta
-                            </button>
-                        </form>
+                        <span class="text-sm font-medium">Gestione Familiare</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer id="contatti" class="bg-white pt-24 pb-12">
+    <!-- Menù Section -->
+    <section id="menu" class="py-24 bg-white relative">
         <div class="container mx-auto px-6">
-            <div class="grid lg:grid-cols-12 gap-16 mb-20">
-                <div class="lg:col-span-4">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-12 h-12 bg-[#1A6B5A] rounded-full flex items-center justify-center text-white">
-                            <i data-lucide="sprout"></i>
-                        </div>
-                        <span class="font-playfair text-2xl font-bold text-[#1A6B5A]">Sacra Famiglia</span>
+            <div class="text-center mb-16 visible" data-scroll-reveal="">
+                <span class="inline-block px-4 py-1 bg-terracotta/10 text-terracotta text-xs font-bold rounded-full mb-4 uppercase tracking-wider">Menù del giorno disponibile</span>
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">I Nostri Sapori</h2>
+                <p class="text-charcoal/60 italic">Il menù cambia con le stagioni, seguendo i ritmi della terra.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 visible" id="menu-tabs" data-scroll-reveal="">
+                <button class="menu-tab active" data-category="antipasti">Antipasti</button>
+                <button class="menu-tab" data-category="primi">Primi</button>
+                <button class="menu-tab" data-category="secondi">Secondi</button>
+                <button class="menu-tab" data-category="dolci">Dolci</button>
+                <button class="menu-tab" data-category="vini">Dalla Cantina</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div id="menu-container" class="grid md:grid-cols-2 gap-x-16 gap-y-12 max-w-5xl mx-auto min-h-[400px] opacity-100" style="width: 1024px; height: 293px;"><div class="flex justify-between items-start border-b border-sage-100 pb-6 menu-item-entry" style="animation-delay: 0s; width: 480px; height: 79px;">
+                    <div class="max-w-[80%]">
+                        <h4 class="text-xl font-serif text-sage-900">Lardo e Polenta</h4>
+                        <p class="text-sm text-charcoal/60 mt-1 italic">Lardo aromatizzato con miele e polenta calda di Storo</p>
                     </div>
-                    <p class="text-gray-500 mb-8 leading-relaxed">Un ambiente rassicurante dove ogni giorno è una nuova opportunità per crescere, ridere e imparare. Paritaria FISM dal 2000.</p>
+                    <span class="font-serif text-lg text-terracotta">€10</span>
+                </div><div class="flex justify-between items-start border-b border-sage-100 pb-6 menu-item-entry" style="animation-delay: 0.08s; width: 480px; height: 77px;">
+                    <div class="max-w-[80%]">
+                        <h4 class="text-xl font-serif text-sage-900">Soppressa Veneta</h4>
+                        <p class="text-sm text-charcoal/60 mt-1 italic">Accompagnata da verdure in agrodolce fatte in casa</p>
+                    </div>
+                    <span class="font-serif text-lg text-terracotta">€12</span>
+                </div><div class="flex justify-between items-start border-b border-sage-100 pb-6 menu-item-entry" style="animation-delay: 0.16s; width: 480px; height: 79px;">
+                    <div class="max-w-[80%]">
+                        <h4 class="text-xl font-serif text-sage-900">Baccalà Mantecato</h4>
+                        <p class="text-sm text-charcoal/60 mt-1 italic">Su crostoni di polenta grigliata</p>
+                    </div>
+                    <span class="font-serif text-lg text-terracotta">€14</span>
+                </div></div>
+        </div>
+    </section>
+
+    <!-- Specialized Highlight Grid -->
+    <section class="grid md:grid-cols-2">
+        <div class="bg-sage-900 text-white flex flex-col justify-center p-12 lg:p-24 space-y-6 visible" data-scroll-reveal="">
+            <h3 class="text-3xl font-serif">La Specialità</h3>
+            <h4 class="text-xl italic font-serif text-sage-200">Risotto all'Isolana</h4>
+            <p class="text-sage-100 font-light leading-relaxed">
+                Preparato secondo l'antica ricetta con vitello, maiale, cannella e rosmarino. Un piatto che rappresenta il cuore pulsante della nostra cucina e del territorio di Roverchiara.
+            </p>
+            <a href="tel:+39044274270" class="inline-flex items-center gap-2 text-terracotta hover:text-white transition-colors font-medium">
+                Prenota ora <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+        </div>
+        <div class="relative h-[500px] md:h-auto overflow-hidden group">
+            <img src="https://r2-bucket.flowith.net/f/e26d3adb0b02a3fd/risotto_all_isolana_food_photography_index_1.jpeg" alt="Risotto all'Isolana tradizionale veronese" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="relative h-[500px] md:h-auto overflow-hidden group order-4 md:order-3">
+            <img src="https://r2-bucket.flowith.net/f/18b5e1676934fcde/pastissada_de_caval_food_photography_index_2.jpeg" alt="Pastissada de caval con polenta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+        </div>
+        <div class="bg-cream text-charcoal flex flex-col justify-center p-12 lg:p-24 space-y-6 order-3 md:order-4 visible" data-scroll-reveal="">
+            <h3 class="text-3xl font-serif">Tradizione Pura</h3>
+            <h4 class="text-xl italic font-serif text-terracotta">Pastissada de Caval</h4>
+            <p class="text-charcoal/70 font-light leading-relaxed">
+                Uno stufato di cavallo a cottura lenta servito con polenta di farina gialla macinata a pietra. Un sapore robusto che rispetta le tradizioni secolari veronesi.
+            </p>
+            <a href="#menu" class="inline-flex items-center gap-2 text-sage-700 hover:text-sage-900 transition-colors font-medium">
+                Vedi i secondi <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Eventi -->
+    <section id="eventi" class="py-24 px-6 bg-sage-50">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 visible" data-scroll-reveal="">
+                <div class="max-w-xl">
+                    <span class="text-sage-600 font-semibold tracking-widest uppercase text-sm">Momenti Speciali</span>
+                    <h2 class="text-4xl md:text-5xl font-serif mt-4">Rendiamo indimenticabili i vostri momenti</h2>
+                </div>
+                <p class="text-charcoal/60 md:max-w-xs pb-2 border-b border-sage-200">
+                    Spazi ampi e una location suggestiva per celebrare in famiglia.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 visible" data-scroll-reveal="">
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition-all border border-sage-100 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="baby" aria-hidden="true" class="lucide lucide-baby w-8 h-8 text-terracotta mb-6 transition-transform group-hover:scale-110"><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path><path d="M15 12h.01"></path><path d="M19.38 6.813A9 9 0 0 1 20.8 10.2a2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path><path d="M9 12h.01"></path></svg>
+                    <h4 class="text-xl font-serif mb-4">Battesimi, comunioni e Cresime</h4>
+                    <p class="text-sm text-charcoal/70 mb-4">Un ambiente sicuro e naturale dove i bambini possono giocare e scoprire gli animali della fattoria.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition-all border border-sage-100 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cake" aria-hidden="true" class="lucide lucide-cake w-8 h-8 text-terracotta mb-6 transition-transform group-hover:scale-110"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"></path><path d="M2 21h20"></path><path d="M7 8v3"></path><path d="M12 8v3"></path><path d="M17 8v3"></path><path d="M7 4h.01"></path><path d="M12 4h.01"></path><path d="M17 4h.01"></path></svg>
+                    <h4 class="text-xl font-serif mb-4">Compleanni &amp; Anniversari</h4>
+                    <p class="text-sm text-charcoal/70 mb-4">Festeggia i tuoi traguardi sulle rive del lago, con menù personalizzati e un'atmosfera intima.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl hover:shadow-xl transition-all border border-sage-100 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-8 h-8 text-terracotta mb-6 transition-transform group-hover:scale-110"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                    <h4 class="text-xl font-serif mb-4">Eventi Aziendali</h4>
+                    <p class="text-sm text-charcoal/70 mb-4">Pranzi di lavoro e team building in un contesto che favorisce il relax, lontano dal caos cittadino.</p>
+                </div>
+            </div>
+
+            <div class="relative rounded-3xl overflow-hidden h-[500px] shadow-2xl visible" data-scroll-reveal="">
+                <img src="https://r2-bucket.flowith.net/f/b21832ef5559437a/elegant_lakeside_family_celebration_index_4.jpeg" alt="Celebrazione elegante sul lago" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center p-6">
+                    <h3 class="text-3xl md:text-4xl text-white font-serif mb-6">Pronti a organizzare il tuo evento?</h3>
+                    <a href="mailto:info@laghettodeisalici.it" class="bg-white text-sage-900 px-10 py-4 rounded-full font-semibold hover:bg-sage-100 transition-colors shadow-lg">
+                        Richiedi disponibilità
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 visible" data-scroll-reveal="">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">L'Atmosfera</h2>
+                <p class="text-charcoal/60">Scorci del nostro mondo tra natura e cucina.</p>
+            </div>
+            
+            <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4 visible" data-scroll-reveal="">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Cucina Italiana">
+                <img src="https://r2-bucket.flowith.net/f/cd1c2a21156dd2a8/lakeside_dining_roverchiara_sunset_index_0.jpeg" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Tramonto Lago">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Scenari Lacustri">
+                <img src="https://r2-bucket.flowith.net/f/e26d3adb0b02a3fd/risotto_all_isolana_food_photography_index_1.jpeg" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Risotto Highlight">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Family Dining">
+                <img src="https://r2-bucket.flowith.net/f/7ee361747e31c72d/cozy_italian_restaurant_interior_index_3.jpeg" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Interior Details">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Gourmet Plate">
+                <img src="https://r2-bucket.flowith.net/f/b21832ef5559437a/elegant_lakeside_family_celebration_index_4.jpeg" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Event Details">
+                <img src="https://images.unsplash.com/photo-1515949105732-47960682977b?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Verona Countryside">
+                <img src="https://r2-bucket.flowith.net/f/18b5e1676934fcde/pastissada_de_caval_food_photography_index_2.jpeg" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Pastissada Close-up">
+                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Wine Pouring">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;q=80&amp;w=800" class="w-full rounded-xl cursor-pointer hover:opacity-90 transition-opacity gallery-img" alt="Lakeside Morning">
+            </div>
+        </div>
+    </section>
+
+    <!-- Recensioni -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 visible" data-scroll-reveal="">
+                <h2 class="text-4xl font-serif mb-4 italic">Dicono di noi</h2>
+                <div class="flex items-center justify-center gap-1 text-terracotta text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star" aria-hidden="true" class="lucide lucide-star fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="star-half" aria-hidden="true" class="lucide lucide-star-half fill-current"><path d="M12 18.338a2.1 2.1 0 0 0-.987.244L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16l2.309-4.679A.53.53 0 0 1 12 2"></path></svg>
+                    <span class="text-sage-900 font-serif ml-3 text-lg">4.6/5</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 visible" data-scroll-reveal="">
+                <div class="review-card bg-cream p-8 rounded-2xl border border-sage-100 shadow-sm hover:shadow-md transition-all">
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">"Un paradiso gastronomico immerso nella natura, dove si apprezzano i sapori della semplicità e la qualità dei prodotti."</p>
+                    <div class="mt-auto">
+                        <span class="text-xs font-bold tracking-widest uppercase text-sage-600">— Cliente Google</span>
+                    </div>
+                </div>
+                <div class="review-card bg-cream p-8 rounded-2xl border border-sage-100 shadow-sm hover:shadow-md transition-all">
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">"Un bel posto per trascorrere del tempo in famiglia. C'è anche un bellissimo laghetto. Il cibo è ottimo per celebrazioni."</p>
+                    <div class="mt-auto">
+                        <span class="text-xs font-bold tracking-widest uppercase text-sage-600">— Famiglia Rossi</span>
+                    </div>
+                </div>
+                <div class="review-card bg-cream p-8 rounded-2xl border border-sage-100 shadow-sm hover:shadow-md transition-all">
+                    <p class="text-charcoal/80 mb-6 italic leading-relaxed">"Menù ampio che segue i ritmi delle stagioni. Se cerchi un posto che rispetta le tradizioni, questo è il posto."</p>
+                    <div class="mt-auto">
+                        <span class="text-xs font-bold tracking-widest uppercase text-sage-600">— Gourmet VR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti / Dove Siamo -->
+    <section id="contatti" class="py-24 px-6 bg-cream border-t border-sage-100">
+        <div class="container mx-auto grid lg:grid-cols-2 gap-16 items-start">
+            <div data-scroll-reveal="" class="visible">
+                <h2 class="text-4xl font-serif mb-8">Vieni a trovarci</h2>
+                <div class="space-y-8 mb-12">
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-[#1A6B5A] hover:bg-[#1A6B5A] hover:text-white transition-all">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-[#1A6B5A] hover:bg-[#1A6B5A] hover:text-white transition-all">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
-                        </a>
+                        <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin text-sage-600 w-6 h-6"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Indirizzo</p>
+                            <p class="text-charcoal/70">Via Paluvecchio, 20<br>37050 Roverchiara (VR)</p>
+                            <a href="https://www.google.com/maps/dir//Ristorante+Laghetto+dei+Salici,+Via+Paluvecchio,+20,+37050+Roverchiara+VR" target="_blank" class="text-terracotta text-sm font-semibold hover:underline mt-2 inline-block">Ottieni indicazioni su Maps</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock text-sage-600 w-6 h-6"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Orari di Apertura</p>
+                            <ul class="text-charcoal/70 text-sm space-y-2 mt-2">
+                                <li class="flex justify-between w-64 border-b border-sage-100 pb-1"><span>Martedì - Sabato:</span> <span>12:00–14:30 | 19:30–22:30</span></li>
+                                <li class="flex justify-between w-64 border-b border-sage-100 pb-1"><span>Domenica:</span> <span>12:00–15:00 | 19:30–22:00</span></li>
+                                <li class="flex justify-between w-64 text-terracotta font-medium"><span>Lunedì:</span> <span>CHIUSO</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="lg:col-span-4 grid grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="font-bold text-[#1A6B5A] mb-6 uppercase text-xs tracking-widest">Esplora</h4>
-                        <ul class="space-y-4 text-gray-500">
-                            <li><a href="#metodo" class="hover:text-[#F5A623] transition-colors">Metodo</a></li>
-                            <li><a href="#servizi" class="hover:text-[#F5A623] transition-colors">Servizi</a></li>
-                            <li><a href="#team" class="hover:text-[#F5A623] transition-colors">Il Team</a></li>
-                            <li><a href="#iscrizioni" class="hover:text-[#F5A623] transition-colors">Iscrizioni</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-[#1A6B5A] mb-6 uppercase text-xs tracking-widest">Contatti</h4>
-                        <ul class="space-y-4 text-gray-500 text-sm">
-                            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-[#F5A623]"></i> Via G. Leopardi, 16<br>37050 Roverchiara (VR)</li>
-                            <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-[#F5A623]"></i> 0442 74383</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-4">
-                    <div class="rounded-3xl overflow-hidden h-48 border border-gray-100 grayscale hover:grayscale-0 transition-all duration-700">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.395899435889!2d11.34181831206124!3d45.267868346399185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f113400000001%3A0x6a0a09727404e3c1!2sScuola%20Materna%20Sacra%20Famiglia!5e0!3m2!1sit!2sit!4v1710320000000!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-sage-100">
+                    <h4 class="font-serif text-2xl mb-6">Contatto Rapido</h4>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:+39044274270" class="flex-1 bg-sage-600 text-white p-4 rounded-xl flex items-center justify-center gap-3 hover:bg-sage-700 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" aria-hidden="true" class="lucide lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> +39 0442 74270
+                        </a>
+                        <a href="mailto:info@laghettodeisalici.it" class="flex-1 border border-sage-600 text-sage-600 p-4 rounded-xl flex items-center justify-center gap-3 hover:bg-sage-50 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" aria-hidden="true" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> Email
+                        </a>
                     </div>
                 </div>
             </div>
+            
+            <div class="h-[600px] lg:h-full min-h-[500px] rounded-3xl overflow-hidden shadow-2xl sticky top-24 visible" data-scroll-reveal="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.452669460012!2d11.238644315551323!3d45.23439057909904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f76906a555555%3A0x2863640e1f7c75b8!2sRistorante%20Laghetto%20dei%20Salici!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" class="w-full h-full grayscale hover:grayscale-0 transition-all duration-700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
-            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
-                <p>© 2026 Scuola Materna Sacra Famiglia. Progetto educativo FISM Roverchiara.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-[#1A6B5A]">Privacy Policy</a>
-                    <a href="#" class="hover:text-[#1A6B5A]">Note Legali</a>
+    <!-- Footer -->
+    <footer class="bg-sage-950 text-white py-16 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-3xl font-serif mb-4">Laghetto Dei Salici</h3>
+                    <p class="text-sage-400 font-light max-w-sm mb-6">
+                        L'essenza della tradizione veronese in una cornice naturale senza tempo.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-sage-800 flex items-center justify-center hover:bg-white hover:text-sage-950 transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="facebook" aria-hidden="true" class="lucide lucide-facebook w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-sage-800 flex items-center justify-center hover:bg-white hover:text-sage-950 transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="instagram" aria-hidden="true" class="lucide lucide-instagram w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                    </div>
                 </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-sage-500">Esplora</h4>
+                    <ul class="space-y-4 text-sage-400 text-sm">
+                        <li><a href="#chi-siamo" class="hover:text-white transition-colors">Il Ristorante</a></li>
+                        <li><a href="#menu" class="hover:text-white transition-colors">Il Menù</a></li>
+                        <li><a href="#eventi" class="hover:text-white transition-colors">Eventi &amp; Feste</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-sage-500">Info</h4>
+                    <ul class="space-y-4 text-sage-400 text-sm">
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" aria-hidden="true" class="lucide lucide-phone w-4 h-4"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> +39 0442 74270</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" aria-hidden="true" class="lucide lucide-mail w-4 h-4"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> info@laghettodeisalici.it</li>
+                        <li class="flex items-center gap-2 text-xs opacity-50">P.IVA: 02847150239</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-sage-900 text-center text-sage-600 text-xs">
+                © 2026 Ristorante Laghetto Dei Salici. Tutti i diritti riservati.
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/39044274383" target="_blank" class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform pulse-animation" id="whatsapp-float">
-        <i data-lucide="message-circle" class="w-8 h-8"></i>
-    </a>
+    <!-- Lightbox (hidden) -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center hidden opacity-0 transition-opacity duration-300 p-4">
+        <button id="close-lightbox" class="absolute top-8 right-8 text-white hover:text-terracotta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-10 h-10"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] object-contain shadow-2xl" alt="Enlarged gallery photo">
+    </div>
 
-    <script type="module" src="main.js"></script>
-</body>
-</html>
+    <script type="module" src="script.js"></script>
+
+
+
+
+
+
+</body></html>
